@@ -1,0 +1,20 @@
+Justin Voss
+Answers for Homework 1
+1.There are 1024 units of RAM. 
+2. There are three registers, reg0, reg1, and reg2. There is also a program counter register, pc.
+3. The arguments are: itself (self), the source (src), and the destination (dst). The source and destination are specific parts of the RAM. They can be a register name or a value. The JLZ takes these arguments and, if the source register, is less than zero, and if, the register is the dest register, then it sets the program counter to the destination. If it is not the dest register, then it changes the pc to the evaluation of the dest register. If its not any of those, then the program counter accumulates. Basically, the pc changes to dest if the register is less than zero. 
+
+4. It checks if an interrupt comes in in the _run_program(). It has a section with an if statement to check for interrupts, which is "if self._intr_raised". 
+
+5.  The S instruction shows the memory from start to end.
+6. The ! Instruction Toggles debugging on or off. It starts up at off. 
+7. Yes. In the assembly code given, there are comments. 
+8. The function in ram called __setitem__() takes a memory address and writes a bytes to it. 
+9. No. In assembly, the assembler doesn't assume, you have to manually load memory into the specific locations. 
+
+
+
+
+
+
+

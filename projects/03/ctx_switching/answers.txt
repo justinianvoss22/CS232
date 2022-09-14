@@ -1,0 +1,13 @@
+1. It is defined in calos.py. calos.py holds the CalOS class, and the PCB class.
+
+2. It contains the information about a process, like the name of the process, the registers, the state of the processes registers when they are at zero, the quantum (timeslice the processs gets, the entry point, the process's id. Different states that a process can be is new, ready, running, waiting, or done.
+
+3. The PCB is created when a program is being loaded into memory. The PCB is made for that program, and is put into the queue.
+
+4. The defined process states are new, ready, waiting, and done.
+
+5. It is defined in the CalOS class, in the calos.py file. It refers to a PCB class object, which we can use to do PCB class functions using this variable. 
+
+6. "With" can be used for resource management. It is often used to make code readable and cleans up the contents. Many times, its for reading files. In this case, the code uses it to makes sure the countdown uses a number that is a readable value. Using "with" will allow the countdown variables to be correctly managed and allows it to run without worrying about exeptions being thrown. It will still run even if an exception is thrown. 
+
+7. If the countdown goes to 0, it tells it to not set another interupt until the interrupt before is handled, and the interrupt is reset. It also tells the countdown to set its state to NOT_RUNNING.  
